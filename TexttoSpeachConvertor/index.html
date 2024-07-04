@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text to Speech Converter</title>
+
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #e6e6e6;
+            text-align: center;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        input {
+            padding: 15px;
+            margin: 10px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            width: 700px;
+            height: 400px;
+            box-sizing: border-box;
+        }
+        input text{
+            display: flex;
+            
+        }
+
+        select {
+            padding: 10px;
+            margin: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            width: 400px;
+            box-sizing: border-box;
+        }
+
+        button {
+            padding: 15px 30px;
+            margin: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        /* Optional: Give a background color to the entire body */
+        body {
+            background-color: #e6e6e6;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Text to Speech Converter</h1>
+    <input type="text" name="text" id="textInput" placeholder="Enter text...">
+    <br>
+    <select name="voices" id="voicesSelect"></select>
+    <button id="btn">Listen</button>
+    
+
+    <script src="script.js"></script>
+</body>
+
+</html>
